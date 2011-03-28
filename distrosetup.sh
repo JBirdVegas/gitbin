@@ -36,7 +36,7 @@ if [ $USER = "root" ]; then
 	git clone git://github.com/JBirdVegas/Android-Build-Assistant.git
 	#rc.local stuff -using '>>' to append to file not '>' the overwrite tunnel
 	sudo echo nmcli nm wifi on >> /etc/rc.local
-	sudo echo "PATH=$PATH:/home/jbird/bin:/home/jbird/dev/android-sdk-linux_x86/platform-	tools:/home/jbird/Desktop/dev/scripts/build:/home/jbird/Desktop/dev/scripts/gitbin" >> /etc/rc.local
+	sudo echo "PATH=$PATH:/home/jbird/bin:/home/jbird/dev/android-sdk-linux_x86/platform-tools:/home/jbird/Desktop/dev/scripts/build:/home/jbird/Desktop/dev/scripts/gitbin" >> /etc/rc.local
 	#replace exit status to rc.local
 	sudo echo "exit 0" >> /etc/rc.local
 	exit 0
